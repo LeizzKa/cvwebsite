@@ -3,10 +3,10 @@ import './App.css';
 
 function Education() {
   let education = {
-    lukio: "Päivölän Opisto",s
+    lukio: "Päivölän Opisto",
   }
   return(
-    <div>
+    <div className="education">
       <h1>Education</h1>
       <p>Highschool: {education.lukio}</p>
     </div>
@@ -14,32 +14,24 @@ function Education() {
 }
 function AboutMe() {
   let hobbies = () => (
-    <div>
-      <p>Chess</p>
-      <p>Riichi Mahjong</p>
-      <p>Role Playing</p>
-      <p>Video Games</p>
+    <div className="hobbies">
+      <li>Chess</li>
+      <li>Riichi Mahjong</li>
+      <li>Role Playing</li>
+      <li>Video Games</li>
     </div>
   )
   let about_me = {
     full_name: "Leevi Mikael Luukkonen",
-    nickname: "Leizz",
     age: "20",
     personality: "",
     hobbies: hobbies
   }
  
   return (
-    <div>
-      <p>Name:</p>
-      {about_me.full_name}
-      <br/>
-      <p>Nickname:</p>
-      {about_me.nickname}
-      <br/>
-      <p>Age</p>
-      {about_me.age}
-      <br/>
+    <div className="me">
+      <p>{about_me.full_name}</p>
+      <p>Age {about_me.age}</p>
       <h1>Hobbies</h1>
       {about_me.hobbies()}
     </div>
@@ -49,7 +41,7 @@ function AboutMe() {
 
 function App(props) {
   return ( 
-    <div>
+    <div className="cv">
      <AboutMe about_me={props.about_me} />
      <Education/>
     </div>
