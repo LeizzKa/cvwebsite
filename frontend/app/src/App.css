@@ -1,3 +1,4 @@
+/*TODO: Make the site readable*/
 .me {
   text-align: left;
   margin-left: 30px;
@@ -12,6 +13,15 @@
 }
 
 .cv {
+  width: 100%;
+  height: 100%;
+}
+
+.edu {
+  margin-left: 30px;
+}
+
+html, body, #root {
   width: 100%;
   height: 100%;
 }

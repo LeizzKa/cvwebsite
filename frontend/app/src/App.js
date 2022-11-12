@@ -2,17 +2,19 @@ import './App.css';
 
 
 function Education() {
+  //TODO: Time periods
   let education = {
     lukio: "Päivölän Opisto",
   }
   return(
-    <div className="education">
+    <div className="edu">
       <h1>Education</h1>
       <p>Highschool: {education.lukio}</p>
     </div>
   )
 }
 function AboutMe() {
+  //TODO: Hobbies into a dropdown or own site with info idfk make it sensible
   let hobbies = () => (
     <div className="hobbies">
       <li>Chess</li>
@@ -22,6 +24,7 @@ function AboutMe() {
     </div>
   )
   let about_me = {
+    //TODO: Figure out how to put personality in
     full_name: "Leevi Mikael Luukkonen",
     age: "20",
     personality: "",
