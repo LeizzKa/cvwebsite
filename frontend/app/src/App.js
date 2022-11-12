@@ -1,15 +1,17 @@
 import './App.css';
+import * as kuva from './cvkuva2.jpg'
 
 
 function Education() {
   //TODO: Time periods
   let education = {
     lukio: "Päivölän Opisto",
+    time_period: "Graduated spring 2020"
   }
   return(
     <div className="edu">
       <h1>Education</h1>
-      <p>Highschool: {education.lukio}</p>
+      <p>{education.lukio}: {education.time_period}</p>
     </div>
   )
 }
@@ -25,6 +27,7 @@ function AboutMe() {
   )
   let about_me = {
     //TODO: Figure out how to put personality in
+    picture: kuva,
     full_name: "Leevi Mikael Luukkonen",
     age: "20",
     personality: "",
@@ -33,6 +36,7 @@ function AboutMe() {
  
   return (
     <div className="me">
+      <img src={about_me.picture} alt="kuva"/>;
       <p>{about_me.full_name}</p>
       <p>Age {about_me.age}</p>
       <h1>Hobbies</h1>
