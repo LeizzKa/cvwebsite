@@ -36,7 +36,7 @@ function AboutMe() {
  
   return (
     <div className="me">
-      <img src={about_me.picture} alt="kuva"/>;
+      <img src={about_me.kuva} alt="cvkuva"/>
       <p>{about_me.full_name}</p>
       <p>Age {about_me.age}</p>
       <h1>Hobbies</h1>
