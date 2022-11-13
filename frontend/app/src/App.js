@@ -1,5 +1,6 @@
 import './App.css';
 import * as kuva from './cvkuva2.jpg'
+import display_personality from 'components/displayPersonality'
 
 
 function Education() {
@@ -25,12 +26,16 @@ function AboutMe() {
       <li>Video Games</li>
     </div>
   )
+  let personality = {
+    //TODO: Figure out how to make this sensible or just scrap it
+    place: "holder"
+  }
+
   let about_me = {
-    //TODO: Figure out how to put personality in
     picture: kuva,
     full_name: "Leevi Mikael Luukkonen",
     age: "20",
-    personality: "",
+    personality: display_personality(personality),
     hobbies: hobbies
   }
  
