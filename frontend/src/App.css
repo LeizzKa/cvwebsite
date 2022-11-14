@@ -1,0 +1,30 @@
+#root {
+  width: 100vw;
+  height: 100vh;
+}
+
+.navbar {
+  float: none;
+  position: absolute;
+  top: 10%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+img {
+  width: auto;
+  height: auto;
+  max-width: 300px;
+  max-height: 300px;
+  margin-top: 50px;
+}
+
+.button {
+  display: block;
+  background-color: aqua;
+}
+
+.button, button {
+  margin-left: 20px;
+  margin-right: 20px;
+}
