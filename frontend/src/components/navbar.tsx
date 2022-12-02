@@ -1,12 +1,10 @@
-import React from 'react'
 import '../index.css'
+import Tabs from '../tabs/main'
 
 function Navbar() {
     return (
         <div className="navbar">
-            <button id="experience">Experience</button>
-            <button id="about-me">About me</button>
-            <button id="cv">Curriculum Vitae</button>
+            <Tabs/>
         </div>
     )
 }

@@ -4,6 +4,7 @@
 }
 
 .navbar {
+  display: table;
   float: none;
   position: absolute;
   top: 10%;
@@ -27,4 +28,13 @@ img {
 .button, button {
   margin-left: 20px;
   margin-right: 20px;
+}
+
+.tabs {
+  display: table-row;
+}
+
+.experience {
+  display: table-cell;
+  float: left;
 }
