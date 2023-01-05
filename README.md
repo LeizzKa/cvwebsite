@@ -9,7 +9,7 @@ NOTE: This part expects you to be in the cvwebsite directory.
 
 ### Running the application on a UNIX machine
 
-1. Run `pip install -r backend/requirements.txt` and `npm i frontend/`.
+1. Run `pip install -r backend/requirements.txt` and `npm i frontend/`
 2. Run `python3 backend/app/src/server.py`
 3. Run `cd frontend`
 4. run `npm run dev`
