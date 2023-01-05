@@ -1,11 +1,11 @@
 # CVWebsite
 
 A personal website to be used as an alternative to regular CV.
-Do note that his project is still heavily WiP
+Do note that his project is still heavily WiP.
 
 ## Running the application
 
-NOTE: This part expects you to be in the cvwebsite directory.
+NOTE: This part expects you to be in the `cvwebsite` directory.
 
 ### Running the application on a UNIX machine
 
