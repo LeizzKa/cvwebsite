@@ -1,16 +1,19 @@
-version: "3"
+version: "3.9"
 services:
   api:
     build:
-      context: .
+      context: ./backend
       dockerfile: ./backend/Dockerfile
     image: cvwebsite-api
     volumes:
-      - .:/app
+      - ./backend/app:/app/api/app
   client:
     build:
-      context: .
+      context: ./frontend
       dockerfile: ./frontend/Dockerfile
     image: cvwebsite-client
+    volumes:
+      - ./frontend:/app/client/app
+      - ./frontend/node_modules:/app/client/node_modules
     ports:
-      - "${VITE_PORT:-5173}:${VITE_PORT:-5173}"
+      - "8080:8080"
