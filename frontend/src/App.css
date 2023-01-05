@@ -25,7 +25,8 @@ img {
   background-color: aqua;
 }
 
-.button, button {
+.button,
+button {
   margin-left: 20px;
   margin-right: 20px;
 }
@@ -37,4 +38,8 @@ img {
 .experience {
   display: table-cell;
   float: left;
+}
+
+.info {
+  align-content: center;
 }
