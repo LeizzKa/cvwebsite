@@ -2,6 +2,3 @@ todo.txt
 node_modules
 frontend/node_modules
 backend/app/src/__pycache__
-docker-compose.yml
-backend/Dockerfile
-frontend/Dockerfile
