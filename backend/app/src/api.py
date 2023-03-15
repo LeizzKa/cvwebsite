@@ -1,24 +1,18 @@
 from fastapi import FastAPI
-from sqlalchemy import create_engine
-from sqlalchemy.orm import sessionmaker
-import psycopg2
+from db import Database
+import json
+import uvicorn
+
 
 app = FastAPI()
-engine = create_engine('postgresql://postgres:postgres@localhost:5432/cvwebsite')
-Session = sessionmaker(bind=engine)
-session = Session()
-conn = psycopg2.connect('dbname=cvwebsite user=postgres')
-cur = conn.cursor()
 
 
-@app.route("/data")
-def data():
-    return {
-        "name": "Leevi Luukkonen",
-        "birth_date": "06.10.2002",
-        "skills": "Python, Flask, JavaScript, TypeScript",
-        "experience": "PSIL"
-        }
+@app.get("/data")
+async def get_all():
+    data = Database.data_query()
+    print("Data received successfully!")
+    return json.dumps(data)
+
 
 if __name__ == "__main__":
-    app.run(debug=True)
+    uvicorn.run("api:app", host="localhost", port=5000, reload=True)
