@@ -17,6 +17,6 @@ NOTE: This part expects you to be in the `cvwebsite` directory.
 ### Running the application on a Windows machine
 
 1. Run `pip install -r backend\requirements.txt` and `npm i frontend`.
-2. Run `backend\app\src\server.py`
+2. Run `backend\app\src\server.py` using python3
 3. Run `dir frontend`
 4. Run `npm run dev`
